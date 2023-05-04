@@ -1,0 +1,125 @@
+@media(max-width: 1200px) {
+   .main {
+    &-blocks {
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: repeat(3, 140px);
+        gap: 20px;
+        place-content: center;
+    }
+    &-background {
+        img {
+            max-width: 130%;
+        }
+        }
+    }
+}
+@media(max-width: 991px) {
+    .main {
+        &-background {
+            img {
+                max-width: 150%;
+            }
+        }
+    }
+    .footer {
+        margin-top: -60px;
+    }
+}
+@media(max-width: 767px) {
+    .main {
+        &-blocks  {
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 140px);
+        }
+        &-background {
+            img {
+                max-width: 200%;
+            }
+        }
+        .form {
+            width: 500px;
+            margin: 0 auto;
+        }
+    }
+    .footer {
+        margin-top: -30px;
+    }
+}
+@media(max-width: 575px) {
+    .main {
+        padding-bottom: 200px;
+        &-blocks  {
+            grid-template-columns: repeat(2, 200px);
+            grid-template-rows: repeat(6, 100px);
+            gap: 45px;
+            .dropbtn {
+                width: 200px;
+            }
+        }
+        &-background {
+            img {
+                max-width: 325%;
+            }
+        }
+    }
+    .footer {
+        margin-top: 0px;
+    }
+}
+@media(max-width: 480px) {
+    .main {
+        padding-bottom: 200px;
+        &-blocks  {
+            grid-template-columns: repeat(2, 180px);
+            grid-template-rows: repeat(6, 100px);
+            gap: 25px;
+            .dropbtn {
+                width: 150px;
+            }
+        }
+        &-background {
+            img {
+                max-width: 400%;
+            }
+        }
+        .form {
+            width: 350px;
+            margin: 0 auto;
+        }
+    }
+    .footer {
+        margin-top: -72px;
+    }
+}
+@media(max-width: 380px) {
+    .main {
+        &-blocks  {
+            grid-template-columns: repeat(1, 150px);
+            grid-template-rows: repeat(6, 50px);
+            gap: 15px;
+            margin-left: -110px;
+            .dropbtn {
+                width: 250px;
+                height: 50px;
+                img {
+                    width: 20%;
+                    &:hover {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+        &-background {
+            img {
+                max-width: 420%;
+            }
+        }
+        .form {
+            width: 320px;
+            margin: 0 auto;
+        }
+    }
+    .footer {
+        margin-top: -72px;
+    }
+}
