@@ -1,0 +1,98 @@
+@media (max-width: 1200px) {
+  .main-blocks {
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 140px);
+    gap: 20px;
+    place-content: center;
+    transform: translateY(-12rem);
+  }
+  .main .main-search .col-md-6 {
+    transform: translateY(-12rem);
+  }
+}
+@media (max-width: 991px) {
+  .footer {
+    margin-top: -60px;
+  }
+}
+@media (max-width: 767px) {
+  .main-blocks {
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 140px);
+  }
+  .main .form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .main h1 {
+    font-size: 70px;
+  }
+
+  .footer {
+    margin-top: -30px;
+  }
+}
+@media (max-width: 575px) {
+  .main {
+    padding-bottom: 200px;
+  }
+  .main-blocks {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(6, 100px);
+    gap: 45px;
+  }
+  .main-blocks .dropbtn {
+    width: 200px;
+  }
+
+  .footer {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    padding-bottom: 200px;
+  }
+  .main-blocks {
+    grid-template-columns: repeat(2, 180px);
+    grid-template-rows: repeat(6, 100px);
+    gap: 25px;
+  }
+  .main-blocks .dropbtn {
+    width: 150px;
+  }
+  .main .form {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    margin-top: -72px;
+  }
+}
+@media (max-width: 380px) {
+  .main-blocks {
+    grid-template-columns: repeat(1, 150px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 15px;
+    margin-left: -110px;
+  }
+  .main-blocks .dropbtn {
+    width: 250px;
+    height: 50px;
+  }
+  .main-blocks .dropbtn img {
+    width: 20%;
+  }
+  .main-blocks .dropbtn img:hover {
+    width: 20%;
+  }
+  .main .form {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    margin-top: -72px;
+  }
+}

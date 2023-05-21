@@ -16,15 +16,14 @@
   overflow-x: hidden;
   overflow-y: hidden;
   z-index: 0;
+  background: url("/src/img/background.jpg") center center/cover no-repeat;
 }
-.main-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
-}
-.main-background img {
-  max-width: 100%;
+.main h1 {
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 106px;
+  color: #e4e5c5;
+  letter-spacing: 15px;
 }
 .main-search .col-md-6 {
   transform: translateY(-15rem);
@@ -74,10 +73,10 @@
   overflow-y: hidden;
   display: grid;
   grid-template-columns: repeat(5, 3fr);
-  grid-template-rows: repeat(3, 3fr);
-  gap: 50px;
+  grid-template-rows: repeat(4, 2fr);
+  gap: 40px;
   text-align: center;
-  transform: translateY(-25rem);
+  transform: translateY(-20rem);
 }
 .main-blocks .dropdown {
   position: relative;
@@ -89,24 +88,24 @@
   align-items: center;
   background-color: #ffffff;
   border-radius: 10px;
-  border-color: #0b627e;
-  border-width: 0.5px;
-  width: 170px;
-  height: 100px;
+  border-color: #abb04a;
+  border-width: 2px;
+  border-style: solid;
+  border: none;
+  width: 120px;
+  height: 70px;
   margin: 10px;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.5s linear;
-  box-shadow: 0 0 20px #eee;
   display: block;
-  color: #0b627e;
+  color: #000000;
 }
 .main-blocks .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #e8edf0;
+  background-color: #eaeaea;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   max-height: 400px;
   overflow-y: auto;
@@ -121,19 +120,15 @@
   display: block;
 }
 .main-blocks .dropbtn img {
-  width: 40%;
+  width: 30%;
 }
 .main-blocks .dropdown-content img {
   width: 40px;
   margin-left: 10px;
 }
 .main-blocks .dropdown:hover .dropbtn {
-  background-image: linear-gradient(to right, #c6ddef 0%, #eef2f3 51%, #c6ddef 100%);
-  color: #04041c;
+  background-image: linear-gradient(to right, #156177 0%, #ffffff 51%, #156177 100%);
   border: #eef2f3;
-}
-.main-blocks .dropbtn:hover img {
-  width: 40%;
 }
 .main-blocks .dropdown-content a:hover {
   background-color: #c6ddef;
@@ -165,7 +160,7 @@
   z-index: 10;
 }
 .navbar .navbar .navbar-brand img {
-  width: 120px;
+  width: 130px;
   padding-top: 5px;
 }
 
@@ -175,30 +170,28 @@
     grid-template-rows: repeat(3, 140px);
     gap: 20px;
     place-content: center;
+    transform: translateY(-12rem);
   }
-  .main-background img {
-    max-width: 130%;
+  .main .main-search .col-md-6 {
+    transform: translateY(-12rem);
   }
 }
 @media (max-width: 991px) {
-  .main-background img {
-    max-width: 150%;
-  }
   .footer {
     margin-top: -60px;
   }
 }
 @media (max-width: 767px) {
   .main-blocks {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 150px);
     grid-template-rows: repeat(3, 140px);
-  }
-  .main-background img {
-    max-width: 200%;
   }
   .main .form {
     width: 500px;
     margin: 0 auto;
+  }
+  .main h1 {
+    font-size: 70px;
   }
   .footer {
     margin-top: -30px;
@@ -216,9 +209,6 @@
   .main-blocks .dropbtn {
     width: 200px;
   }
-  .main-background img {
-    max-width: 325%;
-  }
   .footer {
     margin-top: 0px;
   }
@@ -234,9 +224,6 @@
   }
   .main-blocks .dropbtn {
     width: 150px;
-  }
-  .main-background img {
-    max-width: 400%;
   }
   .main .form {
     width: 350px;
@@ -262,9 +249,6 @@
   }
   .main-blocks .dropbtn img:hover {
     width: 20%;
-  }
-  .main-background img {
-    max-width: 420%;
   }
   .main .form {
     width: 320px;

@@ -1,0 +1,12 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 80px;
+  z-index: 10;
+}
+.navbar .navbar .navbar-brand img {
+  width: 130px;
+  padding-top: 5px;
+}
